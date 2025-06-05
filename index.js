@@ -33,7 +33,7 @@ app.use(express.json());
 app.use(
   cors({
     credentials: true,
-    origin: [process.env.clientURL, "http://10.140.1.29:5173"],
+    origin: [process.env.clientURL],
   })
 );
 app.options("*", cors());
